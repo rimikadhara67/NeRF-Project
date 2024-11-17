@@ -1,38 +1,12 @@
-nerf-project/
-│
-├── data/                     # Folder to store input datasets and rendered images
-│   ├── real_world/           # Real-world images (if any)
-│   ├── synthetic/            # Synthetic datasets (e.g., Blender-generated images)
-│   └── meshes/               # Exported 3D mesh files
-│
-├── src/                      # Source code
-│   ├── models/               # NeRF-related models
-│   │   ├── positional_encoding.py  # Positional encoding implementation
-│   │   └── nerf_model.py           # NeRF architecture
-│   │
-│   ├── utils/                # Utility functions
-│   │   ├── data_loader.py         # Data loading utilities
-│   │   ├── ray_marching.py        # Ray marching and rendering
-│   │   ├── mesh_extraction.py     # 3D mesh extraction functions
-│   │   └── visualization.py       # Visualization utilities
-│   │
-│   ├── train_nerf.py         # Script for training the NeRF
-│   └── extract_mesh.py       # Script for generating 3D meshes
-│
-├── notebooks/                # Jupyter notebooks for experiments and testing
-│   ├── explore_datasets.ipynb    # Explore and preprocess datasets
-│   └── visualize_results.ipynb   # Visualize rendered images and meshes
-│
-├── results/                  # Folder to save rendered images and evaluation metrics
-│   ├── rendered_views/       # Rendered novel views
-│   └── metrics/              # PSNR, SSIM, LPIPS results
-│
-├── tests/                    # Test cases for different modules
-│   ├── test_positional_encoding.py
-│   ├── test_nerf_model.py
-│   ├── test_ray_marching.py
-│   └── test_mesh_extraction.py
-│
-├── requirements.txt          # Python dependencies
-├── README.md                 # Project description and setup instructions
-└── .gitignore                # Ignore unnecessary files in Git
+# NeRF Project
+
+This repository contains the implementation of a **Neural Radiance Field (NeRF)** model for 3D scene reconstruction and 3D mesh extraction. The project includes functionalities for training a NeRF model, rendering novel views, and exporting 3D meshes.
+
+## File Structure
+
+## Description of Key Files
+- **`train_nerf.py`**: Script for training the NeRF model on synthetic or real-world datasets.
+- **`extract_mesh.py`**: Script for extracting and saving 3D meshes from a trained NeRF.
+- **`ray_marching.py`**: Implementation of ray marching for rendering novel views.
+- **`mesh_extraction.py`**: Contains functions for extracting 3D meshes using Marching Cubes.
+- **`data_loader.py`**: Data utilities for loading datasets and camera parameters.
